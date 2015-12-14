@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/card_vertical_margin"
+    android:paddingLeft="@dimen/card_horizontal_margin"
+    android:paddingRight="@dimen/card_horizontal_margin"
+    android:paddingTop="@dimen/card_vertical_margin"
+    android:orientation="vertical">
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- google guidelines were used:
+             https://www.google.com/design/spec/components/cards.html#cards-content-blocks -->
+            <ImageView
+                android:id="@+id/routes_card_image"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/intro_image_description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/intro_image"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <!-- text hardcoded for layout preview only -->
+            <TextView
+                android:id="@+id/item_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:text="ROUTE NAME"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_toLeftOf="@+id/routes_card_image"
+                android:layout_toStartOf="@+id/routes_card_image" />
+            <TextView
+                android:id="@+id/item_text_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Route description with some brief information"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@+id/item_text_name"
+                android:layout_toStartOf="@+id/routes_card_image"
+                android:layout_toLeftOf="@+id/routes_card_image" />
+
+            <LinearLayout
+                android:id="@+id/actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/routes_card_image"
+                android:padding="8dp"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <!-- redirect to login page -->
+                <Button
+                    android:id="@+id/btnRoutesEdit"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/routes_action_edit"
+                    android:textColor="@color/colorPrimary" />
+
+                <!-- redirect to register page -->
+                <Button
+                    android:id="@+id/btnRoutesDelete"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/routes_action_delete"
+                    android:textColor="@color/colorPrimary" />
+                <!-- show route on map -->
+                <Button
+                    android:id="@+id/btnRoutesMap"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/routes_action_map"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

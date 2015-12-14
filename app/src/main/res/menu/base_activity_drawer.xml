@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_routes" android:icon="@android:drawable/ic_menu_directions"
+            android:title="@string/nav_routes_title" />
+        <item android:id="@+id/nav_places" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="@string/nav_places_title" />
+        <!-- map available only from routes page
+        <item android:id="@+id/nav_map" android:icon="@android:drawable/ic_menu_compass"
+            android:title="@string/nav_map_title" />
+        <item android:id="@+id/nav_settings" android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/nav_settings_title" />-->
+    </group>
+</menu>

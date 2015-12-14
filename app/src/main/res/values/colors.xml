@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="separator">#E0E0E0</color>
+
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#ffd600</color>
+    <color name="colorPrimaryLight">#FFCDD2</color>
+    <color name="colorTextIcon">#FFFFFF</color>
+    <color name="colorDivider">#B6B6B6</color>
+</resources>

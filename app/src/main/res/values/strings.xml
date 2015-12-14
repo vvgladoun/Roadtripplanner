@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Road trip planner</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_confirm">Password (confirm)</string>
+    <string name="prompt_full_name">Full Name</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_username">This username is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_different_password">Passwords are different</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- strings related to intro page -->
+    <string name="intro_image_description">intro</string>
+    <string name="intro_text_one">Welcome to Road Trip Planner App! \n\n
+        To manage your routes, leave comments on places and see map you must sign in or register. </string>
+    <string name="intro_text_two">Or you can skip registration (only places will be available).</string>
+    <string name="intro_sign_in">Sign in</string>
+    <string name="intro_register">Register</string>
+    <string name="intro_skip">Show places</string>
+    <string name="intro_text_loading">Initial data loading, please wait..
+        \n (it may take up to few minutes)</string>
+
+    <!-- menu items -->
+    <string name="option_about">About</string>
+    <string name="option_signin">Sign in</string>
+    <string name="option_signout">Sign out</string>
+
+    <!-- routes list items -->
+    <string name="routes_action_edit">edit</string>
+    <string name="routes_action_delete">delete</string>
+    <string name="routes_action_map">show map</string>
+
+    <!-- navigation drawer text -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_routes_title">Routes</string>
+    <string name="nav_places_title">Places</string>
+    <string name="nav_map_title">Map</string>
+    <string name="nav_settings_title">Settings</string>
+
+    <!-- map fragment -->
+    <string name="title_activity_maps">Map</string>
+    <string name="search">Search</string>
+    <string name="go">GO</string>
+    <string name="route">Show Route</string>
+    <string name="navigation">Navigation</string>
+    <string name="prompt_search">Search</string>
+    
+    <!-- create route fragment -->
+    <string name="action_create">Create</string>
+    <string name="prompt_routename">Route name</string>
+    <string name="prompt_description">Description</string>
+    <string name="prompt_image">Image URL</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- place details -->
+    <string name="prompt_comment">Comment</string>
+    <string name="add_coment">Add comment</string>
+    <string name="commentTitle">Comments</string>
+
+    <!-- about fragment -->
+    <string name="about_title">ABOUT</string>
+    <string name="about_text">
+        Road Trip Planner across New Zealand
+        \n App for travelers by travelers.
+        \nVersion 1.0 beta
+        \nDeveloped by:
+        \nVladimir Gladun
+        \nAleksandr Uskov
+        \nWebsite:
+        \n<a href="http://roadtripplanner.co.nf/">http://roadtripplanner.co.nf/</a>
+    </string>
+
+
+</resources>
